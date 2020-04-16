@@ -1,0 +1,8 @@
+/* Notacion hexadecimal de colores */
+h1{
+    color: #998877;
+}
+
+main p {
+    color: rgb(100, 200, 100);
+}

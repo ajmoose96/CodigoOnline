@@ -19,12 +19,14 @@
                 <!-- Placeholder:texto de ayuda en el imput -->
                 <p>
                     <label for="Nombre">Nombre:</label>
-                    <input type="text" placeholder="Ejm: Jorge" id="Nombre" name="inputNombre" />
+                    <input type="text" placeholder="Ejm: Jorge" id="Nombre" name="inputNombre" required autofocus/>
                 </p>
                 <p>
                     <label for="apellido">Apellido:</label>
-                    <input type="text" placeholder="Ejm: Garnica" id="apellido" name="apellido" value="Garnica" />
+                    <input type="text" placeholder="Ejm: Garnica" id="apellido" name="apellido" value="Garnica" 
+                    required minlength="3" maxlength="50"/>
                 </p>
+                <!-- Tabindex, saltar el cursor con tab -->
                 <p>
                     <label for="fechaNac">Fecha de nac:</label>
                     <input type="date" id="fechaNac" name="fechaNac">
@@ -32,11 +34,14 @@
                 </p>
                 <p>
                     <label for="sueldo">Sueldo</label>
-                    <input type="number" id="sueldo" name="suelo" />
+                    <input type="number" id="sueldo" name="suelo"
+                    max="3500" min="1000"/>
                 </p>
                 <p>
                     <label for="pwd">Contraseña</label>
-                    <input type="pasword" id="pwd" name="pwd" />
+                    <input type="password" id="pwd" name="pwd" required
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Minimo 8 caracteres,1 mayuscula, 1 minuscula, 1 numero"/>
                 </p>
                 <p>
                     <label for="correo">Email</label>
